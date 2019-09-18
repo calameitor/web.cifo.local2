@@ -22,10 +22,10 @@ body {
 }
 
 /* social redes*/
-.fa {
+.fab {
   padding: 10px;
-  font-size: 25px;
-  width: 35px;
+  font-size: 20px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
   margin: 2px 1px;
@@ -70,3 +70,20 @@ body {
   background: #cb2027;
   color: white;
 }
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.navbar-brand {
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.navbar .breadcrumb-item + .breadcrumb-item::before {
+color: #bdbdbd; }
+.navbar .breadcrumb-item.active {
+color: #bdbdbd; }
+.navbar.no-content .breadcrumb-item + .breadcrumb-item::before {
+content: none; }
