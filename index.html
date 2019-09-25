@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -16,70 +15,59 @@
   <!-- Custom styles for this template -->
   <link href="css/index.css" rel="stylesheet">
   <!--Pulling Awesome Font -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-info fixed-top d-flex flex-row">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/soc.jpg" width="120" height="60" class="mr-0" alt="">
+  <!-- ******************************** Navigation ****************************************************  -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light p-0 m-0">
+    <a style="line-height: 0px;" class="navbar-brand p-0 m-0" href="https://serveiocupacio.gencat.cat/ca/inici" target="__blank" title="Servei Ocupació de Catalunya">
+      <img class="d-inline-block" src="img/soc.jpg">
+      <span style="line-height:1em;" class="text-left d-none d-inline-block">Servei d'Ocupació <br /> de Catalunya</span>
     </a>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto d-md-none d-lg-none d-sm-block mr-4" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Centros</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav d-flex bg-light pl-2">
+        <li class="nav-item active">
+          <a class="nav-link" href="centros/index.html">Centros <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="#">Oferta formativa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#">Biblioteca</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Portfolio
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto/index.html">Contacto</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Blog
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-          </div>
+        <li class="nav-item d-md-none d-lg-block">
+          <a class="nav-link" href="campus/index.html">Campus Virtual</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Other Pages
+        <li class="nav-item d-md-none d-lg-block">
+          <a class="nav-link" href="campus/login.html">Entrar</a>
+        </li>
+        <li class="nav-item d-md-none d-lg-block pr-3">
+          <a class="nav-link" href="campus/register.html">Registrarse</a>
+        </li>
+        <li class="nav-item dropdown d-lg-none d-md-block d-sm-none pr-3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            eCampus
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-            <a class="dropdown-item" href="faq.html">FAQ</a>
-            <a class="dropdown-item" href="404.html">404</a>
-            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+          <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="campus/index.html">Campus Virtual</a>
+            <a class="dropdown-item" href="campus/login.html">Entrar</a>
+            <a class="dropdown-item" href="campus/register.html">Registrarse</a>
           </div>
         </li>
       </ul>
     </div>
-
   </nav>
+  <!-- **************************CAROUSEL**************************************************************** -->
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -135,303 +123,144 @@
     </div>
   </header>
 
-  <!-- breadcrumb y redes sociales -->
+  <!-- ************************************* redes sociales********************************* -->
 
 
+  <div class="row">
+    <div class="col-12 d-flex justify-content-end">
 
-
-
-  <nav class="navbar navbar-expand-md mb-0 mt-0">
-
-    <!-- breadcrumb-->
-    <div class="mr-auto">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb clearfix d-none d-md-inline-flex pt-0">
-          <li class="breadcrumb-item"><a class="white-text" href="#">Home</a><i class="fas fa-angle-double-right mx-2 white-text" aria-hidden="true"></i></li>
-
-        </ol>
-      </nav>
+      <a href="#"><i id="facebookid" class="fa fa-facebook fa-lg"></i></a>
+      <a href="#"><i id="twitterid" class="fa fa-twitter fa-lg"></i></a>
+      <a href="#"><i id="googleplusid" class="fa fa-google-plus fa-lg"></i></a>
+      <a href="#"><i id="linkedinid" class="fa fa-linkedin fa-lg"></i></a>
+      <a href="#"><i id="instagramid" class="fa fa-instagram fa-lg"></i></a>
+      <a href="#"><i id="pinterestid" class="fa fa-pinterest fa-lg"></i></a>
     </div>
+  </div>
 
-    <div class="d-flex flex-row order-2 order-lg-3">
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-facebook"></span></a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-twitter"></span></a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-youtube"></span></a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-linkedin"></span></a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-pinterest"></span></a></li>
-        <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-instagram"></span></a></li>
+  <!-- ************************************************* Page Content ***************************************************************************-->
+  <div class="row">
+    <p class="text-dark ml-5">Novedades</p>
+  </div>
 
-      </ul>
-
-    </div>
-  </nav>
-
-
-
-
-
-
-
-
-
-  <!-- Page Content -->
-  <div class="container">
-
-
-    <!-- /.row -->
-
-    <!-- Portfolio Section -->
-    <h2>Centros</h2>
-
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_1.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO La Violeta</a>
-            </h4>
-            <p class="card-text">
-              <a href="#" class="fas fa-phone"></a> 932 54 17 00
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_violeta.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> Plaza del Conde de Sert, 25. ¿08035 Barcelona?
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Bus: 60, H4, V15, bus barrio 124
-              <br>
-              <a href="#" class="fas fa-subway"></a> Metro: Vall d'Hebron + bus / Metro: Penitents+bus 124
-              <br>
-              <a href="#" class="fas fa-car"></a> Coche: Ronda de Encima de B20, salida 6 (Vallcarca)</p>
-          </div>
+  <!-- ===============================================CARDS===============================================  -->
+  <div class="container-fluid">
+    <div class="row mt-3 mb-3">
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=1" width="700" height="400" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project One</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_2.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Sabadell</a>
-            </h4>
-            <p class="card-text">
-              <a href="#" class="fas fa-phone"></a> 937 36 29 10
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_sabadell.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> Carretera Nacional 150 km. 08227 Terrassa
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Bus C5 i C7 (interurbana de Sabadell Y Terrassa. Parada: Mancomunitat
-              <br>
-
-              <br>
-              <a href="#" class="fas fa-car"></a> Salida 15 de la C58</p>
-
-          </div>
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=2" width="700" height="400" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project Two</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="img\CIFO_3.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Santa Coloma</a>
-            </h4>
-            <p class="card-text">
-              <a href="#" class="fas fa-phone"></a> 93 254 17 00
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_santacoloma.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> Avenida Ramon Berenguer IV, 74, Santa Coloma de Gramenet
-
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Autobús B-30 (parada delante del Centro)
-              <br>
-              <a href="#" class="fas fa-subway"></a> Metro L1 (estación Santa Coloma) o Metro L9 - Norte (estación Singuerlín)
-              <br>
-              <a href="#" class="fas fa-car"></a> B-20, B27 y B-80
-
-            </p>
-          </div>
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=3" width="700" height="400" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project Three</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_4.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO L’Hospitalet</a>
-            </h4>
-            <p class="card-text"><a href="#" class="fas fa-phone"></a> 93 260 31 20
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_hospitalet.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> Carretera del Mig, 24 (esquina calle Leonardo da Vinci) 08907 Hospitalet de Llobregat
-
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> L12, L52, parada en Enric Prat de la Riba/Ventura Gassol LH1, LH2, parada en Travessia Industrial/Miquel Romeu L14, parada en Avenida Fabregada/Cobalt
-
-              <br>
-              <a href="#" class="fas fa-subway"></a> Metro: Línea 9 estación Can Tries/Gornal
-              <br>
-              <a href="#" class="fas fa-train"></a> Renfe cercanías: (estación Bellvitge) Línea R2 destino final Vilanova i la Geltrú, Castelldefels, Aeropuerto
-
-              <br>
-              <a href="#" class="fas fa-train"></a> Ferrocarriles de la Generalitat de Catalunya: (FGC), estación Sant Josep)</p>
-          </div>
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=4" width="400" height="700" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project Four</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_5.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Lleida</a>
-            </h4>
-            <p class="card-text"><a href="#" class="fas fa-phone"></a> 932 54 17 00
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_lleida.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> calle Enric Farreny, 3 25199 – Lérida
-              <br>
-
-              <a href="#" class="fas fa-bus"></a>
-
-              Bus:
-              <br>
-              * L-2 Ronda-Hospitales
-              <br>
-              * L-3 Exterior-Hospitales
-              <br>
-              * L-5 Dra. Castells-Arnau de Vilanova-Pardinyes
-              <br>
-              * L-6 Mercado Bordeta- Agrònoms -Tanatorio
-              <br>
-
-              <br>
-              <a href="#" class="fas fa-car"></a> Coche: El centro está situado al lado del Pabellón Municipal de Deportes 'Once de Septiembre' y cerca del Campo de Deportes de la Lérida.</p>
-          </div>
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=5" width="400" height="700" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project Five</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_6.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Salt</a>
-            </h4>
-            <p class="card-text"><a href="#" class="fas fa-phone"></a> 972 40 55 70
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_salt.soc@gencat.cat.
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> c/Alfons Moré, 1, Salt:17190
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Bus:
-              <br>
-              * L3
-              <br>
-              * L4
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_6.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Sant Feliu</a>
-            </h4>
-            <p class="card-text"><a href="#" class="fas fa-phone"></a> 93 685 77 90
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_santfeliu.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> c/Hospitalet, 3 (esquina N-II) 08980 - Sant Feliu de Llobregat (Barcelona)
-
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Bus:
-              <br>
-              * L60
-              <br>
-              * L64
-              <br>
-              * L94
-              <br>
-              * L55
-              <br>
-              <a href="#" class="fas fa-subway"></a> Metro: Línea 3
-              <br>
-              <a href="#" class="fas fa-train"></a> Ferrocarriles de la Generalitat de Catalunya: (FGC), S3
-            </p>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" class="img-fluid" src="img\CIFO_6.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">CIFO Tarragona</a>
-            </h4>
-            <p class="card-text"><a href="#" class="fas fa-phone"></a> 977 25 15 66
-              <br>
-              <a href="#" class="fas fa-envelope"></a> cifo_tarragona.soc@gencat.cat
-              <br>
-              <a href="#" class="fas fa-clock"></a> Lunes - Viernes: 8:00 AM to 21:00 PM
-              <br>
-              <a href="#" class="fas fa-home"></a> Cami de la Budellera s/n – 43007 Tarragona
-              <br>
-
-              <a href="#" class="fas fa-bus"></a> Bus:
-              <br>
-              * L1
-              <br>
-              * L9
-              <br>
-              * L11
-              <br>
-              * 12
-              <br>
-              * L13
-            </p>
-          </div>
+      <div class="card col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="https://picsum.photos/200/300?random=6" width="400" height="700" class="card-img-top w-100" style="height: auto" />
+        <div class="card-body">
+          <h5 class="card-title">Project Six</h5>
+          <p class="card-text">Project Four Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque urna varius vitae.</p>
         </div>
       </div>
     </div>
+  </div>
 
-
-
-
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <!-- ========================================= FOOTER ================================================== -->
+  <footer id="footer">
+    <div class="container-fluid mt-3 mb-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="#"><i id="facebook" class="fa fa-facebook fa-2x"></i></a>
+          <a href="#"><i id="twitter" class="fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i id="googleplus" class="fa fa-google-plus fa-2x"></i></a>
+          <a href="#"><i id="linkedin" class="fa fa-linkedin fa-2x"></i></a>
+          <a href="#"><i id="instagram" class="fa fa-instagram fa-2x"></i></a>
+          <a href="#"><i id="pinterest" class="fa fa-pinterest fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <div class="row text-white">
+        <div class="col-lg-2 col-md-3 col-sm-12 text-center">
+          <span>DIRECTO A</span>
+          <ul>
+            <li><a href="centros/index.html">Centros</a></li>
+            <li><a href="#">Oferta <br>Formativa</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="contacto/index.html">Contacto</a></li>
+            <li><a href="campus/index.html">eCampus</a></li>
+            <li><a href="campus/index.html">Campus Virtual</a></li>
+            <li><a href="campus/login.html">Entrar</a></li>
+            <li><a href="campus/register.html">Registrarse</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-12 text-center">
+          <span>AYUDA</span>
+          <ul>
+            <li><a href="#">Sobre Gencat</a></li>
+            <li><a href="#">Accessibilitat</a></li>
+            <li><a href="#">Mapa Web</a></li>
+            <li><a href="#">Aviso Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 text-center">
+          <a href="https://serveiocupacio.gencat.cat/ca/inici" target="__blank" title="Servei Ocupació de Catalunya"><span>SERVEI D'OCUPACIÓ DE CATALUNYA</span></a>
+          <p style="padding:20px"><span>Aviso legal :</span> De acuerdo con el artículo 17.1 de la Ley 19/2014, la © Generalidad de Cataluña permite la reutilización de los contenidos y de los datos siempre que se cite la fuente y la fecha de
+            actualización y que no se desnaturalice la información (artículo 8 de la Ley 37/2007) y también que no se contradiga con una licencia específica.</p>
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <img src="img/sepelogotip.jpg" class=w-100 style="object-fit:cover">
+            </div>
+            <div class="col-4">
+              <img src="img/logotip_Iniciativaocupaciojuvenil_bn.jpg" class=w-100 style="object-fit:cover">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <span>Copyright © Cifo 2018</span>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
